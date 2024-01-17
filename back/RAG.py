@@ -24,7 +24,7 @@ class Rag:
         all_guides = []
 
         for file in file_list:
-            path = f"/Users/parkjiyoung/Desktop/computer_study/project/fin_dap/back/guide_file/{file['eng']}.txt"
+            path = f"/Users/parkjiyoung/Desktop/computer/git/dapphago/back/guide_file/{file['eng']}.txt"
 
             with open(path, 'r', encoding='utf-8') as file_content:
                 guides = file_content.read().split("\n\n^^\n\n")
@@ -81,7 +81,7 @@ class Rag:
         return prompt
 
     def gpt_api(self, query, k):
-        with open("/Users/parkjiyoung/Desktop/computer_study/project/pass_key/gpt_api.txt", "r") as key:
+        with open("/Users/parkjiyoung/Desktop/computer/project/pass_key/gpt_api.txt", "r") as key:
             pass_key = key.read()
         client = OpenAI(
             api_key = pass_key,

@@ -1,5 +1,5 @@
 import os, sys, time, json, openai
-sys.path.append("/Users/parkjiyoung/Desktop/computer_study/project/fin_dap/back")
+sys.path.append("/Users/parkjiyoung/Desktop/computer/git/dapphago/back")
 from RAG import Rag
 
 from django.views.decorators.csrf import csrf_exempt
